@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JobPortal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static "css/index.css" %}">
+    <link rel="stylesheet" href="{%static "css/loader.css" %}">
+    <link rel="stylesheet" href="{%static "css/navbar.css" %}">
+</head>
+
+{%include "tempapp/header.html" %}
+<body>
+    <!-- <div><h2>Welcome to the world of latest technologies</h2></div> -->
+  
+        
+        <div class="jumbotron">
+                <div class="container">
+                     <h1>Welcome to the job portal</h1>
+                     <marquee><h3>Every hours we have latest jobs...!!! stay tuned with us...</h3></marquee>
+                    <a class="btn btn-primary btn-lg" href="hyd" role="button">Hyderabad Jobs</a>
+                    <a class="btn btn-primary btn-lg" href="pune" role="button">Pune Jobs</a>
+                    <a class="btn btn-primary btn-lg" href="bangalore" role="button">Bangalore Jobs</a>
+                    <a class="btn btn-primary btn-lg" href="chennai" role="button">Chennai Jobs</a>
+                </div>
+        </div>
+        
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% include "tempapp/footer.html" %}
+</html>

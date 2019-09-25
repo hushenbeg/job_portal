@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JobPortal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static "css/index.css" %}">
+    <link rel="stylesheet" href="{%static "css/loader.css" %}">
+    <link rel="stylesheet" href="{%static "css/navbar.css" %}">
+</head>
+
+{%include "tempapp/header.html" %}
+<body onload="myFunction()" style="margin:0;">
+
+        <div id="loader"></div>
+        
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+                
+            
+                <h1>Welcome to the Chennai Job portal</h1>
+
+                <div class="container">
+                        <h1>JOB Information</h1><hr>
+                        {%if jobs%}
+                        <table border=2>
+                            <thead>
+                                <th>posting_date</th>
+                                <th>job_title</th>
+                                <th>location</th>
+                                <th>position</th>
+                                <th>eligibility</th>
+                                <th>last_date</th>
+                                <th>more_information</th>
+                                
+                            </thead>
+                            {%for job in jobs%}
+                            <tr>
+                                <td>{{job.posting_date}}</td>
+                                <td>{{job.job_title}}</td>
+                                <td>{{job.location}}</td>
+                                <td>{{job.position}}</td>
+                                <td>{{job.eligibility}}</td>
+                                <td>{{job.last_date}}</td>
+                                <td>{{job.more_information}}</td>
+                                
+                            </tr>
+                            {%endfor%}
+                            {%else%}
+                            <p>No Job record found ...!!!</p>
+                            {%endif%}
+                        </table>
+                        </div>
+                        <hr>
+                            <img src="{%static "images/chennai/cm.jpeg" %}">
+                            <img src="{%static "images/chennai/it.jpeg" %}">
+                            <img src="{%static "images/chennai/food.jpeg" %}">
+                            <img src="{%static "images/chennai/road.jpeg" %}">
+                            
+                      
+        </div>
+        
+        {% include "tempapp/loader.html" %}
+</body>
+<!-- loader completed -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% include "tempapp/footer.html" %}
+
+</html>
