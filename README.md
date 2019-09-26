@@ -1,4 +1,4 @@
-# job_potal
+# job_portal
 For simple understanding of this project, you have must have an idea on Django
 To run this project following things are required:
 1. Python version 3+
@@ -15,8 +15,8 @@ pip install django
 ## For checking django version:
 1. open terminal and type python:
 you will be in python shell , type the following commands:
->>> import django
->>> django.VERSION
+&gt; import django
+&gt; django.VERSION
 
 ## To run this project in your local system:
 1. Clone this project https://github.com/hushenbeg/job_potal in your local folder.
