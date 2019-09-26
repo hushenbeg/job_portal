@@ -11,7 +11,7 @@ $python --version
 
 ## Installing Django with following Command:
 
-pip install django
+$pip install django
 
 ## For checking django version:
 Open terminal and type python:
