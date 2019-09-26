@@ -13,10 +13,10 @@ python --version
 pip install django
 
 ## For checking django version:
-1. open terminal and type python:
+Open terminal and type python:
 you will be in python shell , type the following commands:
------import django
------django.VERSION
+i.)import django
+ii.)django.VERSION
 
 ## To run this project in your local system:
 1. Clone this project https://github.com/hushenbeg/job_potal in your local folder.
