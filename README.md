@@ -7,7 +7,7 @@ To run this project following things are required:
 ## Check python version:
 open terminal and type following command:
 
-python --version
+$python --version
 
 ## Installing Django with following Command:
 
