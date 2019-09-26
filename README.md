@@ -1,5 +1,5 @@
 # job_portal
-For simple understanding of this project, you have must have an idea on Django
+For simple understanding of this project, you have must have an idea on Django.
 To run this project following things are required:
 1. Python version 3+
 2. Django version 2+
@@ -15,7 +15,9 @@ pip install django
 ## For checking django version:
 Open terminal and type python:
 you will be in python shell , type the following commands:
+
 i.)import django
+
 ii.)django.VERSION
 
 ## To run this project in your local system:
