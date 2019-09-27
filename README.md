@@ -17,9 +17,9 @@ $pip install django
 Open terminal and type python:
 you will be in python shell , type the following commands:
 
-i.)import django
+i)import django
 
-ii.)django.VERSION
+ii)django.VERSION
 
 ## To run this project in your local system:
 1. Clone this project https://github.com/hushenbeg/job_potal in your local folder.
