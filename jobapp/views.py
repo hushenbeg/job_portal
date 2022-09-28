@@ -17,8 +17,8 @@ def job_view(request):
 
 def login_view(request):
     user_info = {
-        "username":"hushen.beg",
-        "password":"doche@123"
+        "username":"xxxxxxxx",
+        "password":"xxxxxxxx"
     }
     return render(request, 'tempapp/login.html', user_info)
 
